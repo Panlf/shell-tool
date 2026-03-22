@@ -70,7 +70,7 @@ fi
 # 保存当前偏移量（下次统计起点）
 echo "$CURRENT_SIZE" > "$OFFSET_FILE"
 
-# 循环执行（后续统计都是增量，不会卡）
+# 循环执行（后续统计都是增量）
 while true; do
     echo -e "\n等待 $((INTERVAL/60)) 分钟后进行下一次统计...\n"
     sleep "$INTERVAL"
